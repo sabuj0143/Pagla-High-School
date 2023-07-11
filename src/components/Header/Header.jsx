@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
     return (
         <>
-            <div className="navbar sticky top-0 bg-base-200 font-semibold text-3xl px-8 bebas">
+            <div className="navbar bg-base-200 font-semibold text-3xl px-8 bebas">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -11,10 +11,11 @@ const Header = () => {
                         </label>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li><Link>Home</Link></li>
-                            <li><Link to="/about">About</Link></li>
                             <li><Link to="/instructors">Instructors</Link></li>
+                            <li className="text-2xl"><Link to="/gallery">Gallery</Link></li>
                             <li><Link>Blogs</Link></li>
-                            <li><Link>Contact</Link></li>
+                            <li><Link to="/about">About</Link></li>
+                            <li><Link to="/contact">Contact</Link></li>
                         </ul>
                     </div>
                     <p>Pagla High <span className="text-primary">School</span></p>
@@ -22,10 +23,11 @@ const Header = () => {
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         <li className="text-2xl"><Link>Home</Link></li>
-                        <li className="text-2xl"><Link to="/about">About</Link></li>
                         <li className="text-2xl"><Link to="/instructors">Instructors</Link></li>
+                        <li className="text-2xl"><Link to="/gallery">Gallery</Link></li>
                         <li className="text-2xl"><Link>Blogs</Link></li>
-                        <li className="text-2xl"><Link>Contact</Link></li>
+                        <li className="text-2xl"><Link to="/about">About</Link></li>
+                        <li className="text-2xl"><Link to="contact">Contact</Link></li>
                     </ul>
                 </div>
             </div>

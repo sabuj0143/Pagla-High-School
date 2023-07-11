@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
 import bannerImg from '../../../public/School-banner.jpg';
 // import { TypeAnimation } from 'react-type-animation';
+import { FaPhone } from "react-icons/fa";
 
 
 const Banner = () => {
@@ -9,7 +11,7 @@ const Banner = () => {
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md">
-                        <h1 className="mb-5 text-white text-5xl font-bold bebas">Pagla High School</h1>
+                        <h1 className="mb-5 text-white text-7xl font-bold bebas">Pagla  High  School</h1>
                         {/* <TypeAnimation
                             sequence={[
                                 "Pagla High School",
@@ -26,7 +28,10 @@ const Banner = () => {
                             wrapper="span"
                             repeat={Infinity}></TypeAnimation> */}
                         <p className="mb-5 text-white">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button className="btn btn-primary text-white font-semibold">Contact Us</button>
+                        <Link to="/contact">
+                            <button className="btn btn-primary text-white font-semibold">
+                                Contact Us <FaPhone className='ml-1' /> </button>
+                        </Link>
                     </div>
                 </div>
             </div>
