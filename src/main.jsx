@@ -6,13 +6,34 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Mani from './Layout/Mani';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Instructors from './components/Instructors/Instructors';
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div className='text-red-500'>Hello world!</div>,
+    element: <Mani />,
+    children: [
+      {
+        path: '/',
+        element: <Home></Home>
+      },
+      {
+        path: '/about',
+        element: <About></About>
+      },
+      {
+        path: '/instructors',
+        element: <Instructors></Instructors>
+      },
+    ]
   },
 ]);
+
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
