@@ -11,7 +11,7 @@ const Banner = () => {
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md">
-                        <h1 className="mb-5 text-white text-7xl font-bold bebas">Pagla  High  School</h1>
+                        <h1 className="mb-2 text-white text-7xl font-bold bebas">Pagla  High  School</h1>
                         {/* <TypeAnimation
                             sequence={[
                                 "Pagla High School",
@@ -27,9 +27,9 @@ const Banner = () => {
                             className="text-black"
                             wrapper="span"
                             repeat={Infinity}></TypeAnimation> */}
-                        <p className="mb-5 text-white">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <p className="mb-3 text-white font-semibold p-4">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                         <Link to="/contact">
-                            <button className="btn btn-primary text-white font-semibold">
+                            <button className="btn btn-primary text-white font-bold">
                                 Contact Us <FaPhone className='ml-1' /> </button>
                         </Link>
                     </div>
